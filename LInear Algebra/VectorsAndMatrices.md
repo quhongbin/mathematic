@@ -2,36 +2,13 @@
 $$
 \begin{equation*}
 \begin{split}
-v=\left[
-    \begin{array}{c}
-    1 \\ 
-    2
-    \end{array}
-\right],
-w=\left[
-    \begin{array}{c}
-    3 \\ 
-    4
-    \end{array}
-\right]   
-
-\\
-3v=\left[
-    \begin{array}{c}
-    3 \\ 
-    6
-    \end{array}
-\right]\\
-v+w=\left[
-    \begin{array}{c}
-    4 \\ 
-    6
-    \end{array}
-\right]  
+    v=\left[\begin{array}{c}1 \\ 2 \end{array} \right],
+    w=\left[\begin{array}{c}3 \\ 4 \end{array} \right]   \\
+    3v=\left[\begin{array}{c}3 \\ 6\end{array} \right]   \\
+    v+w=\left[\begin{array}{c}4 \\ 6\end{array} \right]  
 \end{split}
  \end{equation*}
 $$
-
 $$
 \begin{equation}
 \begin{split}
@@ -42,3 +19,130 @@ $$
 \end{split}
 \end{equation}
 $$
+# 向量空间(列空间)
+## 线性无关
+$$
+\begin{equation}
+\begin{split}
+    v=\left[\begin{array}{c} 0 \\1\\2\end{array}\right],
+    w=\left[\begin{array}{c} -1 \\3\\4\end{array}\right],
+    z=\left[\begin{array}{c} 0 \\-3\\6\end{array}\right]
+\end{split}
+\end{equation}
+$$
+> 三个平面方便观察各向量的线性无关性
+
+![latex](../Images/3dVectors.svg) <!--3dVectorsLinearInDependent.py-->
+## 线性相关
+$$
+\begin{equation}
+\begin{split}
+    v=\left[\begin{array}{c} 1 \\1\\6\end{array}\right],
+    w=\left[\begin{array}{c} 2 \\4\\0\end{array}\right],
+    z=\left[\begin{array}{c} 3 \\5\\6\end{array}\right]
+\end{split}
+\end{equation}
+$$
+![latex](../Images/3dVectorsDependent.svg) <!--3dVectorsLinearInDependent.py-->
+
+
+# 线性方程组
+
+## 齐次线性方程组
+> 齐次线性方程组个方程结果为零
+
+$$
+\begin{equation}
+\begin{split}
+    \left\{
+        \begin{array}{c}
+           x_1+2x_2+3x_3=0 \\
+           2x_1+x_2+4x_3=0 \\
+           x_1+3x_2+2x_3=0
+        \end{array}
+    \right.
+\end{split} 
+\end{equation}
+$$
+
+
+
+
+$$
+\begin{equation*}
+\begin{split}
+    齐次线性方程组\left\{
+        \begin{array}{lc}
+            只有零解\\ \\\\ 
+            存在非零解
+        \end{array}
+    \right.
+\end{split} 
+\end{equation*} \\
+$$
+
+> 例1(只有零解)
+
+$$
+\begin{equation}
+\begin{split}
+    &\left\{
+        \begin{array}{r}
+            x_1+2x_2+3x_3&=0\\
+            4x_2+5x_3&=0 \\ 
+            x_3&=0 
+        \end{array}
+    \right. 
+\Rightarrow 
+    \left[
+    \begin{array}{c}
+           1 & 2 & 3 \\  
+           0 & 4 & 5 \\
+           0 & 0 & 1
+    \end{array}
+    \right]
+\end{split}
+\end{equation}
+$$
+> 矩阵非零行数等于未知数个数，则该线性方程组只有零解
+
+> 例2(存在非零解)
+
+$$
+\begin{equation}
+\begin{split}
+    \left\{
+        \begin{array}{r}
+            x_1+2x_2+3x_3&=0\\
+            4x_2+5x_3&=0 \\ 
+            0&=0 
+        \end{array}
+    \right. 
+&\Rightarrow
+    \left[
+    \begin{array}{c}
+           1 & 2 & 3 \\  
+           0 & 4 & 5 \\
+           0 & 0 & 0
+    \end{array}
+    \right] \\
+&\Downarrow \\
+     x=\left[
+    \begin{array}{c}
+        -\frac{1}{2}x_3 \\
+        -\frac{5}{4}x_3 \\
+        x_3
+    \end{array}
+    \right]   
+&\Rightarrow 
+     x=x_3\left[
+    \begin{array}{c}
+        -\frac{1}{2} \\
+        -\frac{5}{4} \\ 
+        1
+    \end{array}
+    \right]
+\end{split}
+\end{equation}
+$$
+
