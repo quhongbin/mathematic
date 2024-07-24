@@ -131,7 +131,7 @@ $$
     \begin{array}{c}
         -\frac{1}{2}x_3 \\
         -\frac{5}{4}x_3 \\
-        x_3
+        x_3(为何等于X_3?)
     \end{array}
     \right]   
 &\Rightarrow 
@@ -146,3 +146,103 @@ $$
 \end{equation}
 $$
 
+> $X_3$可以取任意值
+
+# 非齐次线性方程组(每个方程组不全为零解)
+
+$$
+\begin{equation}
+\begin{split}
+   \left\{ 
+        \begin{array}{r}
+            x_1+2x_2+3x_3&=5 \\
+            x_1+3x_2+4x_3&=6 \\ 
+            x_1+4x_2+5x_3&=7 \\ 
+        \end{array}
+    \right.
+\end{split}
+\end{equation}
+$$
+
+>增广矩阵无穷解的通解
+$$
+\left[
+     \begin{array}{c:c}
+     \begin{matrix}
+        1&2&3 \\
+        1&3&4 \\
+        1&4&5 \\         
+     \end{matrix} &
+    \begin{matrix} 
+       5 \\ 
+       6 \\
+       7
+    \end{matrix}
+    \end{array}
+\right ]
+\Rightarrow
+\left[
+     \begin{array}{c:c}
+     \begin{matrix}
+        1&2&3 \\
+        0&1&1 \\
+        0&0&0 \\         
+     \end{matrix} &
+    \begin{matrix} 
+       5 \\ 
+       1 \\
+       0
+    \end{matrix}
+    \end{array}
+\right ]
+\Rightarrow 
+   \left\{ 
+        \begin{array}{r}
+            x_1+2x_2+3x_3&=5 \\
+            x_2+x_3&=1  \\
+            0&=0
+        \end{array}
+    \right. \\
+\Rightarrow
+   \left\{ 
+        \begin{array}{r}
+            x_1&=3-x_3 \\
+            x_2&=1-x_3  \\
+            x_3&=x_3
+        \end{array}
+    \right. x_1,x_2,x_3均是x_3的因变量
+\Rightarrow
+x=\left[
+    \begin{array}{c}
+    3-x_3 \\
+    1-x_3 \\
+    x_3 
+    \end{array}
+  \right] =
+  \left[
+    \begin{array}{c}
+       3 \\
+       1 \\
+       0 
+    \end{array}
+  \right] +
+  x_3\left[
+    \begin{array}{c}
+       -1 \\
+       -1 \\
+       1 
+    \end{array}
+  \right]
+$$
+
+r(A|b)=r(A)=2 < 3(未知数个数),方程组有无穷解
+$$
+
+
+$$
+r(A|b)=r(A)=3 = 3(未知数个数),方程组有唯一解
+$$
+
+$$
+r(A|b)\ne r(A),方程组有无解
+$$
