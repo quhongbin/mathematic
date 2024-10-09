@@ -1,6 +1,6 @@
 #########栈的四则运算#########
-r="1+(2/3)-4"
-def stack_calulate_to_postfix(expression):
+r="1+(1/3)-4"
+def StackCalulateToPostfix(expression):
     stack=[]
     result_postfix=[]
     for i in expression:
@@ -24,8 +24,8 @@ def stack_calulate_to_postfix(expression):
     print(result_postfix)
     print(stack)
 
-print(stack_calulate_to_postfix(r))
-def postfix_calculate(values):
+print(StackCalulateToPostfix(r))
+def PostfixCalculate(values):
     # num=[]
     # for j in values:
     #     base_opt=["-","+","*","/"]
@@ -43,11 +43,11 @@ def postfix_calculate(values):
         elif j in base_opt:      #如果遍历到符号，弹出栈顶和栈顶-1元素进行运算
             num2=num.pop()
             num1=num.pop()
-            res=postfix_calculate_method(num1,num2,j)
+            res=PostfixCalculateMethod(num1,num2,j)
             num.append(res)      #运算完成后，将结果压入栈num中
     return num[0]                #返回结果
 
-def postfix_calculate_method(num1,num2,j):
+def PostfixCalculateMethod(num1,num2,j):
     if j in "+":
         result=float(num1)+float(num2)
     elif j in "-":
@@ -64,4 +64,4 @@ def postfix_calculate_method(num1,num2,j):
 
 
 
-print(postfix_calculate(stack_calulate_to_postfix(r)))
+print(PostfixCalculate(StackCalulateToPostfix(r)))
