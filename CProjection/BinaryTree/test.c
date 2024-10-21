@@ -5,12 +5,19 @@
 	> Created Time: Tue Oct 15 16:12:18 2024
  ************************************************************************/
 
-#include<stdio.h>
-#include <time.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-int main(int argc,char* argv[]){
-    printf("total is %d\n",argc);
-    printf("first:%s\n",argv[0]);
-    printf("second:%s\n",argv[1]);
-    printf("third:%s\n",argv[2]);
+void f(int **p){
+    **p=2;
+    *p=(int*)malloc(sizeof(int));
+    **p=3;
+    printf("%d\n",**p);
+}
+
+int main(){
+    int a =1;
+    int *b =&a;
+    f(&b);
+    printf("%d %d",a,a);
 }

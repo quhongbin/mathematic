@@ -1,50 +1,47 @@
 /*************************************************************************
-	> File Name: BinaryTree.c
+	> File Name: BinaryTreePonP.c
 	> Author: quhongbin
 	> Mail: 2818777520@qq.com 
-	> Created Time: Tue Oct 15 15:12:28 2024
+	> Created Time: Wed Oct 16 20:16:05 2024
  ************************************************************************/
 
-#include <stdio.h>
+#include<stdio.h>
 #include <stdlib.h>
 
-typedef struct BinaryTree{
+typedef struct BiTree{
     char data;
-    struct BinaryTree* leftChild;
-    struct BinaryTree* rightChild;
+    struct BiTree* leftChild;
+    struct BiTree* rightChild;
 }BiTree ;
 
-BiTree* createTree(){
-    BiTree* T;
-    char input;
-    scanf("%c",&input);
-    if (input == '#') {
-        T=NULL;
+void createTree(BiTree* *T){   //*T本质上是一个地址
+    char ch;
+    scanf("%c",&ch);
+    if (ch == '#') {
+       *T=NULL; 
     }else {
-        T=(BiTree*)malloc(sizeof(BiTree));
-        T->data=input;
-        T->leftChild=createTree();
-        T->rightChild=createTree();
+        (*T)=(BiTree*)malloc(sizeof(BiTree));
+        (*T)->data=ch;
+        createTree(&((*T)->leftChild));      //  (*T)->leftChild访问当前地址，结构体中的leftChild.leftChild嵌在头节点里
+        createTree(&((*T)->rightChild));
     }
-    return T;
 }
 
-void preOrder(BiTree* T){
+void preOrder(BiTree* T){ //为何传入BiTree* T???
     if (T == NULL) {
         return;
     }else {
-        printf("%c",T->data);        
+        printf("%c",T->data);
         preOrder(T->leftChild);
         preOrder(T->rightChild);
     }
 }
-
 void inOrder(BiTree* T){
     if (T == NULL) {
         return;
     }else {
         inOrder(T->leftChild);
-        printf("%c",T->data);        
+        printf("%c",T->data);
         inOrder(T->rightChild);
     }
 }
@@ -54,16 +51,15 @@ void postOrder(BiTree* T){
     }else {
         postOrder(T->leftChild);
         postOrder(T->rightChild);
-        printf("%c",T->data);        
+        printf("%c",T->data);
     }
 }
 int main(){
-    BiTree* T=createTree();
+    BiTree* T;
+    createTree(&T);
     preOrder(T);
     printf("\n");
     inOrder(T);
     printf("\n");
     postOrder(T);
-    printf("\n");
-    return 0;
 }
