@@ -43,8 +43,14 @@ $$
 \end{split}
 \end{equation}
 $$
-![latex](../Images/3dVectorsDependent.svg) <!--3dVectorsLinearInDependent.py-->
+<table cellspading="0">
+    <tr>
+        <td><img src="../Images/3dVectorsDependent.svg" width="100%"></td>
+        <td><img src="../Images/3dVectorsDependent.png"width="100%"></td>
+    </tr>
+</table>
 
+<!--3dVectorsLinearInDependent.py-->
 
 # 线性方程组
 
@@ -445,6 +451,7 @@ $$
 >类似的,例如数值$a=3,a^{-1}=\frac{1}{3} \qquad 3|1 \xRightarrow{同乘\frac{1}{3}}1|\frac{1}{3} \quad a\cdot a^{-1}=1$ 
 
 # 行列式
+> 可以看成矩阵的一个属性,他是一个数值,表示的是矩阵在某维度的比例映射系数
 
 $$
 \left|
@@ -454,4 +461,182 @@ $$
    7 & 8 & 9 
 \end{array}
 \right |
+\left|
+\begin{array}{ccc}
+   1 & 2 & 3 \\
+   4 & 5 & 6 \\
+   7 & 8 & 9 
+\end{array}
+\right |
 $$
+
+$
+该行列式值为1\times5\times9+2\times6\times7+3\times4\times8-3\times5\times7-1\times6\times8-2\times4\times9=-2
+$
+- ### 上三角行列式和下三角行列式
+
+$
+A\left|
+\begin{array}{ccc}
+   1 & 2 & 3 \\
+   0 & 5 & 6 \\
+   0 & 0 & 9 
+\end{array}
+\right | \Rightarrow 1\times 5\times 9+2\times6\times0+3\times0\times0-3\times5\times0-1\times6\times0+2\times0\times9=45
+$
+
+$
+B\left|
+\begin{array}{ccc}
+   1 & 0 & 0 \\
+   2 & 5 & 0 \\
+   3 & 6 & 9 
+\end{array}
+\right | \Rightarrow 1\times 5\times 9+2\times6\times0+3\times0\times0-3\times5\times0-1\times6\times0+2\times0\times9=45
+$
+
+$
+上三角和下三角行列式都等于\underline{主对角线之积},A=(B)^T
+$
+> 初等行列变换会对行列式的值产生影响,矩阵只是一个数值阵列,而行列式是一个数值
+
+$
+\left|
+\begin{array}{cc}
+    1 & 2 \\
+    3 & 4 
+\end{array} 
+\right| =A \qquad
+A\xRightarrow{行变换}
+\left |
+\begin{array}{cc}
+    3 & 4 \\
+    1 & 2   
+\end{array}
+\right| =2 \qquad
+A\xRightarrow{列变换}
+\left |
+\begin{array}{cc}
+    2 & 1 \\
+    4 & 3   
+\end{array}
+\right| =2
+$
+初等行列变换(一次行变换或一次列变换会改变行列式的值,$-1^{n}\ ,n为变换次数$)
+$
+\left|
+\begin{array}{cc}
+    1 & 2 \\
+    3 & 4 
+\end{array} 
+\right| =A \qquad
+A\xRightarrow{\times 5}
+\left|
+\begin{array}{cc}
+    1\times 5 & 2\times 5 \\
+    3 & 4 
+\end{array} 
+\right| =-10
+$
+数乘
+$
+\left|
+\begin{array}{cc}
+    1 & 2 \\
+    3 & 4 
+\end{array} 
+\right| =A \qquad
+A\xRightarrow{-2\times A_{i1}+A_{i2}}
+\left |
+\begin{array}{cc}
+    1 & 0 \\
+    3 & -2   
+\end{array}
+\right| =-2 \qquad
+A\xRightarrow{-2\times A_{1j+A_{2j}}}
+\left |
+\begin{array}{cc}
+    1 & 2 \\
+    1 & 0   
+\end{array}
+\right| =-2
+$
+倍加
+
+- ### 行列式降价与展开
+> 行列式的<strong>初等行变换或列变换</strong>只能与<strong>相邻的行或列</strong>进行交换
+
+在上三角行列式中$A=\left|
+\begin{array}{ccc}
+   1 & 2 & 3 \\
+   0 & 5 & 6 \\
+   0 & 0 & 9 
+\end{array}
+\right | \Rightarrow 1\times 5\times 9=45,其中5\times9是行列式
+\left|
+\begin{array}{ccc}
+    5 & 6 \\
+    0 & 9 
+\end{array}
+\right |的值$
+
+$
+设a_{ij}是行列式中第i行,第j列
+$
+###### 行列式的降价
+$
+设行列式
+D=\left|
+\begin{array}{ccc}
+   1 & 3 & 4 \\
+   5 & 8 & 7 \\
+   1 & 2 & 4 
+\end{array}
+\right | \xRightarrow{D_{1j} - D_{3j}}
+\left|
+\begin{array}{ccc}
+   1 & 3 & 4 \\
+   5 & 8 & 7 \\
+   0 & 1 & 0 
+\end{array}
+\right | \xRightarrow{初等行列变换\times3}
+(-1)^{3}\left|
+\begin{array}{ccc}
+   1 & 0 & 0 \\
+   3 & 1 & 4 \\
+   8 & 5 & 7 
+\end{array}
+\right | =
+(-1)^{3}\times1\times
+\left |
+    \begin{array}{cc}
+        1 & 4 \\
+        5 & 7
+    \end{array}
+\right| =13 
+$
+###### 行列式的降价定理
+$
+设a_{ij}是行列式D第i行,第j列的元素,M_{ij}是其余子式,对应的代数余子式是A_{ij}=(-1)^{i+j}\cdot M_{ij},如果第i行或第j列除a_{ij}以外的元素都为0,那么原行列式值D=a_{ij}\cdot A_{ij}\Leftrightarrow a_{ij}\cdot (-1)^{i+j}\cdot M_{ij}$
+
+$
+因为元素a_{ij}到行列式的左上角需垂直移动(i-1)次,水平移动(j-1)次,总共移动i+j-2次,则D=(-1)^{i+j-2}\cdot a_{ij}\cdot M_{ij},\; (-1)^{i+j-2}=(-1)^{i+j},所以D=(-1)^{i+j}\cdot a_{ij} \cdot M_{ij}
+$
+
+$
+例:D=\left |
+    \begin{array}{ccc}
+    1 & 3 & 4 \\
+    5 & 8 & 7 \\
+    0 & 1 & 0
+    \end{array}
+\right |
+=(-1)^{3+2}\cdot 1\cdot 
+\left |
+    \begin{array}{cc}
+    1 & 4 \\
+    5 & 7
+    \end{array}
+\right | =13
+$
+> 上述D中 $,所以行列式的展开可以写成D=\cdot A_{ij}$
