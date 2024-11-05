@@ -1,7 +1,9 @@
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
-Plug 'valloric/youcompleteme'
+" Use release branch (recommend)
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'valloric/youcompleteme'
 call plug#end()
 map <F2> :NERDTreeToggle<CR>
 
@@ -50,24 +52,42 @@ set noerrorbells  "出错时，不要发出声响
 set visualbell    "出错时，发出视觉提示，通常是屏幕闪烁
 set history=1000  "Vim 需要记住多少次历史操作
 set autoread    "打开文件监视。如果在编辑过程中文件发生外部改变（比如被别的编辑器编辑了），就会发出提示
-set listchars=tab:»■,trail:■    "如果行尾有多余的空格（包括 Tab 键），
-set list                        "该配置将让这些空格显示成可见的小方块
+"set listchars=tab:»■,trail:■    "如果行尾有多余的空格（包括 Tab 键），
+"set list                        "该配置将让这些空格显示成可见的小方块
 set wildmenu                    "命令模式下，底部操作指令按下 Tab 键自动补全。
 set wildmode=longest:list,full  "第一次按下 Tab，会显示所有匹配的操作指令的清单；第二次按下 Tab，会依次选择各个指令
 set clipboard=unnamed    "共享剪贴板
+
+"让TAB键生效，可以选择关键字
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+
+" Make <CR> to accept selected completion item or notify coc.nvim to format
+" <C-g>u breaks current undo, please make your own choice
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+"" Use <c-space> to trigger completion
+inoremap <silent><expr> <C-o> coc#refresh()
 
 
 
 """"""新建.py文件时自动加上下面的内容"""""
 func SetTitle()
-call setline(2, "!/usr/bin/python")
 call setline(1,"############################################################ File Name:".expand("%"))
-call setline(3, "\> -*- coding=utf8 -*-")
-call setline(4, "###################################################################################")
-call setline(5, "\#     >@Author : quhongbin")
-call setline(6, "\#     >@Created Time : ".strftime("%Y-%m-%d %H:%M:%S"))
-call setline(7, "\#     >@Description : ")
-call setline(8, "###################################################################################")
+call setline(2, "###################################################################################")
+call setline(3, "\#     >@Author : quhongbin")
+call setline(4, "\#     >@Created Time : ".strftime("%Y-%m-%d %H:%M:%S"))
+call setline(5, "\#     >@Description : ")
+call setline(6, "###################################################################################")
 normal G
 normal o
 normal o
