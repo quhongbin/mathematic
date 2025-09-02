@@ -10,8 +10,8 @@ cos_val=np.cos(data)
 
 ax.plot(cos_val,sin_val,data)
 
-ax.set_xlabel("it's x轴")
-ax.set_ylabel("it's y轴")
-ax.set_zlabel("z轴")
+ax.set_xlabel("it's x axis")
+ax.set_ylabel("it's y axis")
+ax.set_zlabel("z axis")
 ax.axline([0,0],[0,1])
 plt.show()

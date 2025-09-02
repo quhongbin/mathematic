@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "create-python-file",
+            "type": "shell",
+            "command": "copy",
+            // 使用 ${workspaceFolder} 引用工作区根目录
+            "args": [
+                "${workspaceFolder}\\.vscode\\templates\\python_test.py",
+                "${fileDirname}\\${input:fileName}.py"
+            ],
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "fileName",
+            "type": "promptString",
+            "description": "请输入文件名（不含后缀）",
+
+        }
+    ]
+}

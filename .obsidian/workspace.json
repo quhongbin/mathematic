@@ -1,0 +1,223 @@
+{
+  "main": {
+    "id": "73c6d1b0ec205714",
+    "type": "split",
+    "children": [
+      {
+        "id": "5a72a4b522aa32bf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec7a617291d6f2b3",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/单侧导数和可导与连续的关系.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "单侧导数和可导与连续的关系"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4a16fb88883f5519",
+    "type": "split",
+    "children": [
+      {
+        "id": "aff6903c9dcbb214",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4a5893326add0f19",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "9e9e92d96dde50a3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:excalidraw",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "dd6adf372c6247c8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "fb7c14cef82a4c1c",
+    "type": "split",
+    "children": [
+      {
+        "id": "cdd6eb57b346b664",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ca845cbee27bbee3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Excalidraw/单侧导数和可导与连续的关系.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "单侧导数和可导与连续的关系 的反向链接列表"
+            }
+          },
+          {
+            "id": "7ce5c7be9883afd1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Excalidraw/单侧导数和可导与连续的关系.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "单侧导数和可导与连续的关系 的出链列表"
+            }
+          },
+          {
+            "id": "60fcd32ef0f08726",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "e3e345bf445c7a99",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Excalidraw/单侧导数和可导与连续的关系.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "单侧导数和可导与连续的关系 的大纲"
+            }
+          },
+          {
+            "id": "ed82ea347cd9f4bd",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 283.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:创建新数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "4a5893326add0f19",
+  "lastOpenFiles": [
+    "integral/一元微分.md",
+    "integral/极限_连续.md",
+    "integral/proof_of_theory/极限的精准定义.md",
+    "README.md",
+    "integral/examples/单侧导数和可导与连续的关系.pdf",
+    "Excalidraw/单侧导数和可导与连续的关系.md",
+    "integral/examples/单侧导数和可导与连续的关系.md",
+    "integral/images/单侧导数和可导与连续的关系.png",
+    "Excalidraw/Drawing 2025-09-01 15.38.20.excalidraw.md",
+    "Excalidraw/Drawing 2025-09-01 15.38.42.excalidraw.md",
+    "integral/examples",
+    "integral/proof_of_theory/求导公式和求导法则.md",
+    "LInear Algebra/VectorsAndMatrices.md",
+    "integral/proof_of_theory/数学归纳法.md",
+    "integral/数学归纳法.py",
+    "未命名 2.base",
+    "未命名 1.base",
+    "未命名.base",
+    "integral/images/第一个重要极限.png",
+    "integral/images/第二个重要极限.png",
+    "integral/proof_of_theory/第二个重要极限.py",
+    "integral/images/图解极限精确定义.png",
+    "Images/Figure_1.svg",
+    "integral/极限精准定义.py",
+    "integral/images",
+    "integral/新建文件夹",
+    "Excalidraw/Drawing 2025-08-31 20.54.16.excalidraw.md",
+    "Images/tan除x.svg",
+    "Images/tan除x.png",
+    "Arifical Intelligence/reinforcement learing.md",
+    "canvas/test.canvas",
+    "Excalidraw/test.md",
+    "Excalidraw/Drawing 2025-08-30 21.51.10.excalidraw.md",
+    "未命名.canvas",
+    "Images/3dVectorsInDependent-1.png",
+    "DataStruct/readme.md",
+    "Images/3dVectors.svg"
+  ]
+}

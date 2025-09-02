@@ -8,7 +8,6 @@ call plug#end()
 map <F2> :NERDTreeToggle<CR>
 
 imap jk <Esc>
-nmap <Space> :
 
 
 "切换窗口

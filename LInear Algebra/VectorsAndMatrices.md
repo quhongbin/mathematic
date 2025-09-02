@@ -1,4 +1,7 @@
-
+---
+title: Linear Algebra
+data:
+---
 $$
 \begin{equation*}
 \begin{split}
@@ -639,4 +642,6 @@ $
     \end{array}
 \right | =13
 $
-> 上述D中 $,所以行列式的展开可以写成D=\cdot A_{ij}$
+
+### 行列式的含义
+

@@ -13,3 +13,4 @@ ax.set_xticklabels(radian_tickslabels)      #x的刻度标签为radian_tickslabe
 
 plt.plot(thete,sin_x)
 plt.show()
+
