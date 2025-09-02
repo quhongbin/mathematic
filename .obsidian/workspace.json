@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5a72a4b522aa32bf",
+        "id": "6ecfe30070fea709",
         "type": "tabs",
         "children": [
           {
-            "id": "ec7a617291d6f2b3",
+            "id": "bf2e73b16ea28154",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/单侧导数和可导与连续的关系.md"
+                "file": "integral/一元微分.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "单侧导数和可导与连续的关系"
+              "icon": "lucide-file",
+              "title": "一元微分"
             }
           }
         ]
@@ -111,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/单侧导数和可导与连续的关系.md",
+                "file": "integral/一元微分.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "单侧导数和可导与连续的关系 的出链列表"
+              "title": "一元微分 的出链列表"
             }
           },
           {
@@ -140,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/单侧导数和可导与连续的关系.md",
+                "file": "integral/一元微分.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "单侧导数和可导与连续的关系 的大纲"
+              "title": "一元微分 的大纲"
             }
           },
           {
@@ -180,14 +182,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4a5893326add0f19",
+  "active": "bf2e73b16ea28154",
   "lastOpenFiles": [
+    "Excalidraw/单侧导数和可导与连续的关系.md",
     "integral/一元微分.md",
     "integral/极限_连续.md",
     "integral/proof_of_theory/极限的精准定义.md",
     "README.md",
     "integral/examples/单侧导数和可导与连续的关系.pdf",
-    "Excalidraw/单侧导数和可导与连续的关系.md",
     "integral/examples/单侧导数和可导与连续的关系.md",
     "integral/images/单侧导数和可导与连续的关系.png",
     "Excalidraw/Drawing 2025-09-01 15.38.20.excalidraw.md",
