@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "integral/一元微分.md",
+                "file": "大师课学习/1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "一元微分"
+              "title": "1"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "integral/一元微分.md",
+                "file": "大师课学习/1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "一元微分 的大纲"
+              "title": "1 的大纲"
             }
           },
           {
@@ -166,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283.5
+    "width": 370.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,11 +184,19 @@
   },
   "active": "bf2e73b16ea28154",
   "lastOpenFiles": [
-    "Excalidraw/单侧导数和可导与连续的关系.md",
+    "LInear Algebra/VectorsAndMatrices.md",
+    "大师课学习/1.md",
+    "大师课学习",
+    "DailyNote",
+    "未命名.canvas",
+    "README.md",
     "integral/一元微分.md",
     "integral/极限_连续.md",
+    "DataStruct/readme.md",
+    "Excalidraw/三角函数公式.md",
+    "Arifical Intelligence/reinforcement learing.md",
+    "Excalidraw/单侧导数和可导与连续的关系.md",
     "integral/proof_of_theory/极限的精准定义.md",
-    "README.md",
     "integral/examples/单侧导数和可导与连续的关系.pdf",
     "integral/examples/单侧导数和可导与连续的关系.md",
     "integral/images/单侧导数和可导与连续的关系.png",
@@ -196,7 +204,6 @@
     "Excalidraw/Drawing 2025-09-01 15.38.42.excalidraw.md",
     "integral/examples",
     "integral/proof_of_theory/求导公式和求导法则.md",
-    "LInear Algebra/VectorsAndMatrices.md",
     "integral/proof_of_theory/数学归纳法.md",
     "integral/数学归纳法.py",
     "未命名 2.base",
@@ -208,18 +215,12 @@
     "integral/images/图解极限精确定义.png",
     "Images/Figure_1.svg",
     "integral/极限精准定义.py",
-    "integral/images",
-    "integral/新建文件夹",
     "Excalidraw/Drawing 2025-08-31 20.54.16.excalidraw.md",
     "Images/tan除x.svg",
     "Images/tan除x.png",
-    "Arifical Intelligence/reinforcement learing.md",
     "canvas/test.canvas",
-    "Excalidraw/test.md",
     "Excalidraw/Drawing 2025-08-30 21.51.10.excalidraw.md",
-    "未命名.canvas",
     "Images/3dVectorsInDependent-1.png",
-    "DataStruct/readme.md",
     "Images/3dVectors.svg"
   ]
 }

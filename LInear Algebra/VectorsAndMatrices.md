@@ -1,6 +1,8 @@
 ---
 title: Linear Algebra
 data:
+tags:
+  - test1
 ---
 $$
 \begin{equation*}
